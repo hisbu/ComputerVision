@@ -86,7 +86,7 @@ $blobClient = BlobRestProxy::createBlobService($connectionString);
             $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
             $count=sizeof($result->getBlobs());
             $fileNameToUpload = $count++.$_FILES["fileToUpload"]["name"];
-            echo $fileToUpload;
+            // echo $fileToUpload;
         // $myfile = fopen($fileToUpload, "w") or die("Unable to open file!");
         // fclose($myfile);
         
