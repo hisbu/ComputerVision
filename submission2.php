@@ -41,7 +41,7 @@ use MicrosoftAzure\Storage\Blob\Models\ListBlobsOptions;
 use MicrosoftAzure\Storage\Blob\Models\CreateContainerOptions;
 use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
 
-$connectionString = "DefaultEndpointsProtocol=https;AccountName=sasubmission2;AccountKey=sA5z8JfobVlRoE5HtvXvF1uQb42rchBZm+Yx88IFhlCSj8diwDllxgNJRmcJif9zmqC+WkWwlgLJruWOMw5apQ==";
+$connectionString = "DefaultEndpointsProtocol=https;AccountName=<Account Name>;AccountKey=<Account Key";
 
 // Create blob client.
 $blobClient = BlobRestProxy::createBlobService($connectionString);
@@ -300,7 +300,7 @@ $blobClient = BlobRestProxy::createBlobService($connectionString);
         // **********************************************
  
         // Replace <Subscription Key> with your valid subscription key.
-        var subscriptionKey = "7b2646f19b1748088a39e4c860a48f0f";
+        var subscriptionKey = "<Subscription key>";
  
         // You must use the same Azure region in your REST API method as you used to
         // get your subscription keys. For example, if you got your subscription keys
